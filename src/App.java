@@ -41,6 +41,9 @@ public class App {
             String travelClass) {
         driver.get("https://www.makemytrip.com/railways/");
 
+        // resize the window to full screen so that all elements are visible to the driver
+        driver.manage().window().maximize();
+
         /**
          * 1. Check if landed on the correct page
          */
